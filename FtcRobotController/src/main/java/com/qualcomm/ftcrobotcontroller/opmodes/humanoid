@@ -1,0 +1,30 @@
+package com.qualcomm.ftcrobotcontroller.opmodes;
+
+
+        import com.qualcomm.robotcore.eventloop.opmode.OpMode;
+        import com.qualcomm.robotcore.hardware.DcMotor;
+        import com.qualcomm.robotcore.hardware.Servo;
+
+public class humanoid extends OpMode {
+    Servo s1;
+    Servo s2;
+    Servo s3;
+    Servo s4;
+    Servo s5;
+    Servo s6;
+    Servo s7;
+    Servo s8;
+    DcMotor ls;
+    DcMotor rs;
+
+    public humanoid()
+    {
+
+    }
+    @Override
+    public void init()
+    {
+
+    }
+
+}
