@@ -42,35 +42,59 @@ public class humanoid extends OpMode {
     {
         int t = 0;
         int x = 0;
+        double s1position = 0;
+        double s2position = 0;
+        double s3position = 0;
+        double s4position = 0;
+        double s5position = 0;
+        double s6position = 0;
+        double s7position = 0;
+        double s8position = 0;
+
 
        if (gamepad1.back)
        {
            if (gamepad1.a) {
-               s1.setPosition(position += .1);
-
+               s1.setPosition(s1position + .1);
+                s1position = s1position + .1;
            }
 
            if (gamepad1.b) {
-               s1.setPosition(position -= .1);
+               s1.setPosition(s1position - .1);
+               s1position = s1position - .1;
 
            }
 
            if (gamepad1.x) {
-               s3.setPosition(position += .1);
+               s3.setPosition(s3position + .1);
+               s3position = s3position + .1;
            }
 
            if (gamepad1.y) {
-               s3.setPosition(position -= .1);
+               s3.setPosition(s3position - .1);
+               s3position = s3position - .1;
            }
 
            if (gamepad1.dpad_left)
            {
-               s2.setPosition(position += .1);
+               s2.setPosition(s2position + .1);
+               s2position = s2position + .1;
            }
 
            if (gamepad1.dpad_right)
            {
-               s2.setPosition(position -=.1);
+               s2.setPosition(s2position - .1);
+               s2position = s2position - .1;
+           }
+
+           if (gamepad1.left_stick_button)
+           {
+               s4.setPosition(1);
+           }
+
+           if (gamepad1.right_stick_button)
+           {
+               s4.setPosition(0);
            }
 
        }
@@ -79,32 +103,38 @@ public class humanoid extends OpMode {
         {
             if (gamepad1.a)
             {
-                s5.setPosition(position += .1);
+                s5.setPosition(s5position + .1);
+                s5position = s5position + .1;
             }
 
             if (gamepad1.b)
             {
-                s5.setPosition(position -= .1);
+                s5.setPosition(s5position - .1);
+                s5position = s5position - .1;
             }
 
             if (gamepad1.x)
             {
-                s7.setPosition(position += .1);
+                s7.setPosition(s7position + .1);
+                s7position = s7position + .1;
             }
 
             if (gamepad1.y)
             {
-                s7.setPosition(position -= .1);
+                s7.setPosition(s7position - .1);
+                s7position = s7position - .1;
             }
 
             if (gamepad1.dpad_left)
             {
-                s6.setPosition(position += .1);
+                s6.setPosition(position + .1);
+                s6position = s6position + .1;
             }
 
             if (gamepad1.dpad_right)
             {
-                s6.setPosition(position -= .1);
+                s6.setPosition(position - .1);
+                s6position = s6position - .1;
             }
 
             if (gamepad1.left_stick_button)
